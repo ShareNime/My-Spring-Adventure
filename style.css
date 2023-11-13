@@ -1,0 +1,270 @@
+@import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@500;700&family=Quicksand:wght@500;700&display=swap');
+body{
+    font-family: 'Pixelify Sans', sans-serif;
+    height: 100vh;
+    margin: 0px;
+    display: flex;
+    /* position: relative; */
+    flex-direction: column;
+    background-color: #CCD6A6;
+    width: 100%;
+}
+h4{
+    font-size: 1.7rem;
+}
+.jumbotron{
+    /* border-style: dashed;
+    border-width: 2px; */
+    /* align-items: center; */
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    background-color: #a5c543;
+    flex-grow: 1;
+    /* overflow: hidden; */
+}
+.jumbotron h1{
+    background-color: #445D48;
+    margin-top: 5px;
+    font-size: 48pt;
+    color: white;
+    position: absolute;
+    border-radius: 20px;
+    opacity: 80%;
+    text-align: center;
+    /* font-weight: 400; */
+}
+.jumbotron img{
+    object-fit: cover;
+    width: 100%;
+}
+nav{
+    background-color: #445D48;
+    padding: 5px;
+    position: sticky;
+    top: 0px;
+    max-width: 2000px;
+}
+nav ul{
+    padding-left: 15px;
+    display: flex;
+    gap: 2rem 5rem;
+}
+nav li{
+    list-style-type: none;
+    /* width: 200px; */
+}
+.nav-list{
+    max-width: 100%;
+}
+nav li a{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    font-weight: 500;
+    padding: .5rem 1.5rem;
+    border-radius: 20px;
+    transition: all .2s ease-in-out;
+}
+nav li:hover a{
+    background-color: #cae2cc;
+    color: #1C241A;
+}
+.content{
+    display: flex;
+    background-color: #86A789;
+    margin: 10px;
+    max-width: 1250px;
+    border-radius: 10px;
+    padding-bottom: 50px;
+}
+.content h2{
+    font-size: 3rem;
+}
+.content h3{
+    font-size: 2rem;
+}
+.content p{
+    line-height: 1.7rem;
+    font-size: 1.2rem;
+}
+.content article{
+    padding: 0px 20px;
+}
+.description-portrait .description{
+    flex: 1 1;
+    flex-grow: 5;
+}
+.introduction .description p{
+    display: block;
+    
+}
+.description-portrait .characterportrait{
+    display: flex;
+    flex-grow: 1;
+    border: black;
+    border-width: 5px;
+    border-style: dashed;
+    border-radius: 20px;
+    max-width: 300px;
+    max-height: 300px;
+    background-color: #CCD6A6;
+
+}
+.description-portrait {
+    display: flex;
+    
+}
+.characterportrait img{
+    width: 300px;
+    
+}
+
+.skill img{
+    width: 300px;
+    border-radius: 20px;
+    border-style: dashed;
+    border-width: 3px;
+}
+.enemies .description-portrait{
+    display: flex;
+    gap: 1rem;
+}
+.enemies .description-portrait p{
+    flex: 3;
+    
+}
+.enemies img{
+    width: 300px;
+    border-radius: 20px;
+    border-style: dashed;
+    border-width: 3px;
+    flex: 1;
+}
+.map img{
+    width: 500px;
+    border-radius: 20px;
+    border-style: dashed;
+    border-width: 3px;
+}
+main{
+    display: flex;
+    
+}
+.right{
+    flex-grow: 10;
+    margin-right: 10px;
+    
+}
+.news{
+    background-color: #ff7d00;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    
+}
+.aside-image{
+    margin: auto;
+}
+.news img{
+    width: 300px;
+    border-radius: 10px;
+    border-style: dashed;
+    border-width: 2px;
+}
+
+.news ul{
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+.news li{
+    list-style-type: none;
+    /* line-height: 4rem; */
+    background-color: #96452c;
+    border-radius: 10px;
+    height: 50px;
+}
+.news li a{
+    text-decoration: none;
+    color: white;
+}
+.news h2{
+    font-size: 40pt;
+    text-align: center;
+}
+footer{
+    background-color: #ff7d00;
+    justify-content: space-between;
+    text-align: center;
+    width: 100%;
+    /* font-size: 1.2rem; */
+    
+}
+
+@media screen and (max-width: 1000px) {
+    body{
+        width: 100%;
+    }
+    header {
+        align-items: center;
+        flex-direction: column;
+        width: 100%;
+    }
+    .jumbotron img{
+        width: 100%;
+    }
+    header.navbar-container .nav-list ul{
+        flex-wrap: wrap;
+        column-gap: .5rem;
+    }
+
+    main{
+        padding: 0rem 0rem;
+        flex-direction: column;
+        /* max-width: 700px;
+        min-width: 700px; */
+        width: 95%;
+    }
+    .nav-list ul{
+        
+        flex-direction: column;
+        /* width: 900px; */
+    }
+    .content{
+        padding: 0;
+    }
+    header.nav-list ul{
+        flex-wrap: wrap;
+        column-gap: .5rem;
+    }
+    main content{
+        flex-direction: column;
+        gap: 2rem;
+    }
+    main .content .content-description .title {
+        font-size: 3rem;
+    }
+     
+    main .content .content-description p {
+        font-size: 1rem;
+    }
+    main .content .content-image {
+        order: -1;
+    }
+    .map img{
+        width: 100%;
+        border-radius: 20px;
+        border-style: dashed;
+        border-width: 3px;
+    }
+    .description-portrait{
+        flex-direction: column;
+    }
+    footer{
+        width: 100%;;
+    }
+}
